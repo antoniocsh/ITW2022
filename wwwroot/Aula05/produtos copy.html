@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="../lib/font-awesome/dist/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Sty.css" />
+    <title>Produtos</title>
+    <style>
+        .banner {
+            margin: 0px;
+            padding: 0px;
+            height: 300px;
+            margin-bottom: 20px;
+            background: transparent;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://diolli.com/wp-content/uploads/2021/12/1576103858_4-5.jpg);
+        }
+
+        .meio {
+            width: 1200px;
+            margin: auto
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa fa-anchor" aria-hidden="true"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home"></i>Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="produtos.html">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactos.html">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            Contactos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+ 
+ 
+ <!-- Modal Body -->
+ <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+ <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content" style="width: 1038px; height: 811px;background:#EAEAEA; border-radius:20px">
+            <div class="text-center modal-header">
+                <h5 class="modal-title " id="modalTitleId"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img style="box-sizing: border-box;
+
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                left: 39px;
+                top: 102px;
+                
+                background: url(pancakes.jpg);
+                border: 1px solid #000000;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                border-radius: 15px;" src="aceito.png"></img>
+                <p style="position: absolute;
+                width: 384px;
+                height: 90px;
+                left: 334px;
+                top: 3px;
+                
+                font-family: 'Imprima';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 58px;
+                
+                color: #000000;
+                "
+                class="text-center">Panquecas</p>
+                <p style="position: absolute;
+        
+                left: 260px;
+                top: 114px;
+                
+                font-family: 'Imprima';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 46px;
+                
+                color: #000000;
+                ">Escolher topping:</p>
+                
+                <input name="topping" style="position: absolute;
+                left: 260px;
+                top: 175px;
+                color: #655A5A;
+                " type="radio"><p style="position: absolute;
+                left: 280px;
+                top: 168px;
+                color: #655A5A;
+                " >Chocolate</p>
+                <input name="topping" style="position: absolute;
+                left: 260px;
+                top: 210px;
+                color: #655A5A;
+                " type="radio"><p style="position: absolute;
+                left: 280px;
+                top: 203px;
+                color: #655A5A;
+                " >Morango</p>
+                <input name="topping" style="position: absolute;
+                left: 260px;
+                top: 245px;
+                color: #655A5A;
+                " type="radio"><p style="position: absolute;
+                left: 280px;
+                top: 238px;
+                color: #655A5A;
+                ">Caramelo</p>
+                <input name="topping" style="position: absolute;
+                left: 260px;
+                top: 280px;
+                color: #655A5A;
+                " type="radio"><p style="position: absolute;
+                left: 280px;
+                top: 273px;
+                color: #655A5A;
+                " >Xarope</p>
+
+<p style="position: absolute;
+left: 550px;
+top: 114px;
+
+font-family: 'Imprima';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 46px;
+
+color: #000000;
+">Restrições alimentares:</p>
+
+<input name="restr" style="position: absolute;
+left: 550px;
+top: 175px;
+color: #655A5A;
+" type="radio"><p style="position: absolute;
+left: 570px;
+top: 168px;
+color: #655A5A;
+" >Nenhuma</p>
+<input name="restr" style="position: absolute;
+left: 550px;
+top: 210px;
+color: #655A5A;
+" type="radio"><p style="position: absolute;
+left: 570px;
+top: 203px;
+color: #655A5A;
+" >Vegetariano</p>
+<input name="restr" style="position: absolute;
+left: 550px;
+top: 245px;
+color: #655A5A;
+" type="radio"><p style="position: absolute;
+left: 570px;
+top: 238px;
+color: #655A5A;
+">Vegan</p>
+<input name="restr" style="position: absolute;
+left: 550px;
+top: 280px;
+color: #655A5A;
+" type="radio"id="outros"><p style="position: absolute;
+left: 570px;
+top: 273px;
+color: #655A5A;
+" >Outros:</p>
+
+<label for="outros"><input style="height:40px; width:375px; background-color: #D9D9D9; left: 550px;
+top: 305px; position: absolute;" type="text"></label>
+
+            </div>
+            <div class="modal-footer" style="padding-right:100px">
+                <button type="button" style="vertical-align: middle;background: #C29846; border-radius: 20px; width:175px; height:60px;" class="btn btn-secondary text-center" data-bs-dismiss="modal"><span class="text-center" style="font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 48px;
+                    text-align: center;
+                    vertical-align: middle;
+                    color: #FFFFFF;
+                    ">Adicionar</span></button>
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+ 
+ <!-- Optional: Place to the bottom of scripts -->
+ <script>
+    const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+ 
+ </script>
+    <div style="height: 100px"></div>
+    <div class="container-fluid">
+        <div class="row" align="center">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="cafe.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text" align="center"><h5>Cafe?</h5></p>
+                      <!-- Modal trigger button -->
+ <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+   Launch
+ </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="fofoa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text" align="center"><h5>FOFOCA?</h5>For f in fofoca: print (f) </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="aceito.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text" align="center"><h5>Aceito</h5>Aceito!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    <!---<script>
+    $(document).ready(function(){
+        $("#botão").click(function(){
+      $("#exampleModal").modal('show');
+    });
+});--->
+    
+  </script>
+ <script src="../lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+ <script src="wwwroot\lib\jquery\dist\jquery.js"></script>
+</body>
+</html>

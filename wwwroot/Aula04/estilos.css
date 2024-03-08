@@ -1,0 +1,15 @@
+﻿body, input, select, textarea {font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif}
+
+.top {width: 960px; background-color: blue; margin: auto; height: 40px; }
+.banner { width: 1200px; background-color: pink; margin: auto; height: 350px; }
+.zonacentral { width: 960px; background-color: cyan; margin: auto; min-height: 400px; }
+.content {width: 800px; min-height: 400px; background-color: purple; float: left; }
+.advertising {width: 160px; min-height: 400px; background-color: yellow; float: left; }
+.footer { width: 960px; height: 40px; background-color: lime; margin: auto; }
+ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; }
+li { float: left; border-right: 1px solid #bbb; }
+li:last-child { border-right: none; float: right; }
+li a { display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+li a:hover:not(.active) { background-color: #444; }
+li a.active:hover { color: #444; }
+.active { background-color: #5CAF50; }

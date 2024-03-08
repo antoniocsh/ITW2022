@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../lib/font-awesome/dist/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <form>
+            <select  id="oi" data-bind="options: raquel, optionsCaption: 'Bilhetesss.. ;)', optionsText: 'nome', value: bescolhido">
+
+            </select>
+            <button data-bind="click: resetar, enable: bescolhido">Clear</button>
+            <p data-bind="with: bescolhido">
+                escolheste <span data-bind="text:nome"></span>
+                e isso custa <span data-bind="text: preco"></span>
+            </p>
+        </form>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+    <script>
+        var myvm = function(){
+            this.raquel = ko.observableArray([
+                {nome: "diogu", preco: 100},
+                {nome: "raquel", preco: 200},
+                {nome: "andre", preco: 300},
+                {nome: "rita", preco: 400},
+                {nome: "mafalda", preco: 2},
+            ])
+            this.bescolhido = ko.observable();
+            this.resetar = function(){this.bescolhido(null)}
+        }
+        ko.applyBindings(new myvm());
+    </script>
+
+</body>
+</html>

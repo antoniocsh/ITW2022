@@ -1,0 +1,25 @@
+﻿/* TODO: escrever o código em falta aqui... */
+.bannerTop {
+    background-image: url('images/celeiro.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.fundo { background-color:powderblue}
+
+.hash {
+    font-family: 'Open Sans';
+    font-size: x-small;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-variant: normal;
+    font-size: small;
+}

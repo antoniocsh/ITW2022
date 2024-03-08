@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Informação Pessoal  </h1>
+    
+    <form name="PersonData" action="http://192.168.160.36/FormEcho.aspx" method="post">
+        <fieldset>
+            <legend>Informação Pessoal</legend>
+            <table>
+                <input type="hidden" name="FormName" value="UserForm" />
+                <dl>
+                <tr>
+                    <td><dt><label for="fn">Nome:</label></dt></td>
+                    <td>
+                        <dd>
+                            <input type="text" name="FirstName" value="Joaquim" placeholder="Nome" id="fn" />
+                        </dd>
+                    </td>
+                </tr>
+                <tr>
+                    <td><dt><label for="ln">Sobrenome:</label></dt></td>
+                    <td>
+                        <dd>
+                            <input type="text" name="LastName" placeholder="Sobrenome" id="ln" />
+                        </dd>
+                    </td>
+                </tr>
+                <tr>
+                    <td><dt><label for="pw">Palavra-Passe:</label></dt></td>
+                    <td>
+                        <dd>
+                            <input type="password" name="Password" placeholder="Digite a palavra passe" id="pw" />
+                        </dd>
+                    </td>
+                </tr>
+                </dl>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><label for="cmm">Comentários</label><br /></legend>
+            <dl>
+                <dd>
+                    <textarea name="Comments" rows="4" cols="80" placeholder="Insira os seus comentários" id="cmm"></textarea>
+                </dd>
+            </dl>
+        </fieldset>
+        <table>
+            <tr>
+            <td><fieldset>
+                <legend>Meios de transporte</legend>
+                    <input type="checkbox" name="vehicle" value="Bicicleta" id="bic"><label for="bic">Bicicleta</label><br />
+                    <input id="carro" type="checkbox" name="vehicle" value="Carro"><label for="carro">Carro</label><br />
+                    <input type="checkbox" name="vehicle" value="Comboio">Comboio
+                METER AQUI A LABLE NAO ENTENDI COMO E QUE SE FAZ VOU FAZER EM CASA DEPOIS
+            </fieldset></td>
+            <td><fieldset>
+                <legend>Cor preferida</legend>
+            </fieldset></td>
+            </tr>
+        </table>
+
+
+
+
+        <dl>
+            <dd>
+            <input name="Button" type="Submit" /><input type="reset" name="resetBtn" value="Reset" />
+            </dd>
+        </dl>
+    </form>
+</table>
+
+</body>
+</html>

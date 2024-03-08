@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Travel Agency jQuery</title>
+<link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../lib/font-awesome/dist/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="page-header" style="margin-top: 10px;"><h3><i class="fa fa-plane fa-lg" aria-hidden="true"></i> Escolha a classe da passagem...</h3></div>
+        <form class="row">
+           <div class="form-floating">
+                <select data-bind="options: tickets,
+                    optionsCaption: 'Choose...',
+                    optionsText: 'name', 
+                    value: chosenTicket" class="form-control"></select>
+                <label for="flightClasses" class="control-label">Choose a ticket class:</label>
+            </div>
+            <div class="form-floating">
+                <button data-bind="enable: chosenTicket,
+                    click: resetTicket" class="btn btn-sm btn-secondary">Clear</button>
+            </div>
+            <div class="form-floating">
+                <p data-bind="with: chosenTicket" class="form-control-static">
+                    You have chosen <s data-bind="text: name"></s>
+                        ($<span data-bind="text: price"></span>)
+                </p>
+            </div>
+        </form>
+
+        
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+<script>
+function TicketsViewModel() {
+    this.tickets = [
+    { name: "Amangas", price: 300000.95 },
+    { name: "Business", price: 449.22 },
+    { name: "First Class", price: 1199.99 },
+    { name: "Vivian Camião", price: 1}
+    ];
+    this.chosenTicket = ko.observable();
+    this.resetTicket = function () { this.chosenTicket(null) }
+    }
+    ko.applyBindings(new TicketsViewModel());</script>
+</body>
+</html>

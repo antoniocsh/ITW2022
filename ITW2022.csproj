@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="wwwroot\Aula05\estilos.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\a12lklshdaljkdsba.sjdbasd,kbsdajb\diana.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\Aula01\andre.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\Aula02\index.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\teste3.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Aula05\index.html" />
+    <None Include="wwwroot\teste3\teste3.js" />
+  </ItemGroup>
+
+</Project>

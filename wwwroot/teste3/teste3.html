@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITW - teste prático 3 2022/23</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="teste3.css" />
+</head>
+<body>
+    <div class="bannerTop"></div>
+    <div class="container">
+        <form action="http://192.168.160.36/FormEcho.aspx">
+            <div class="row">
+                <div class="col-6"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                <div class=""><span class="" id="produtos" title="Número de produtos selecionados">0</span></div>
+                <div class=""><span class="" id="quantidades" title="Quantidade total de produtos">0</span></div>
+                <div class=""><span class="" id="total" title="Preço total da compra">0.00</span></div>
+                <div class=""><button type="button" class="" onclick="recalculate()" title="Recalcular"><i class=""></i></button></div>
+                <div class=""><input type="submit" class="" onclick="return send()" title="Enviar pedido" value="Enviar" /></div>
+            </div>
+            <hr />
+            <div class="form">
+                <div class="row">
+                    <div class=""><img class="" src="images/421331.png" title="Pizza Veggie Sem Gluten E Sem Lactose Congelada"></div>
+                    <input type="checkbox" id="product1" name="product1" class="" /> Pizza Veggie Sem Gluten E Sem Lactose Congelada
+                    <p class="">390 Gramas • 13.33€ por Kg</p>
+                    <div class="form-control">
+                        <div class=""><input name="price1" id="price1" class="" value="5.20" title="Preço em €" readonly></div>
+                        <div class=""><input type="number" name="qty1" id="qty1" maxlength="12" min="0" max="99" step="1" value="0" title="Quantidade" class=""></div>
+                    </div>
+                    <p class="">#frio #semgluten #semlactose #semovo #vegetariano</p>
+                </div>
+                <div class="row">
+                    <div class=""><img class="" src="images/24358.png" title="Corn Flakes S/Açúcar"></div>
+                    <input type="checkbox" id="product2" name="product2" class="" /> Corn Flakes S/Açúcar
+                    <p class="">250 Gramas • 6.40€ por Kg</p>
+                    <div class="row">
+                        <div class=""><input name="price2" id="price2" class="" value="1.60" title="Preço em €" readonly></div>
+                        <div class=""><input type="number" name="qty2" id="qty2" maxlength="12" min="0" max="99" step="1" value="0" title="Quantidade" class=""></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=""><img class="" src="images/357265.png" title="Bebida Aveia C/Cálcio Em Pó"></div>
+                    <input type="checkbox" id="product3" name="product3" class="" /> Bebida Aveia C/Cálcio Em Pó
+                    <p class="">400 Gramas • 33.15€ por Kg</p>
+                    <div class="row">
+                        <div class=""><input name="price3" id="price3" class="form-control" value="13.26" title="Preço em €" readonly></div>
+                        <div class=""><input type="number" name="qty3" id="qty3" maxlength="12" min="0" max="99" step="1" value="0" title="Quantidade" class=""></div>
+                    </div>
+                    <p class="">#biologico</p>
+                </div>
+                <div class="">
+                    <div class=""><img class="" src="images/501002.png" title="Bio Bebida Amêndoa Avelã Pó"></div>
+                    <input type="checkbox" id="product4" name="product4" class="" /> Bio Bebida Amêndoa Avelã Pó
+                    <p class="">400 Gramas • 49.95€ por Kg</p>
+                    <div class="row">
+                        <div class=""><input name="price4" id="price4" class="" value="19.98" title="Preço em €" readonly></div>
+                        <div class=""><input type="number" name="qty4" id="qty4" maxlength="12" min="0" max="99" step="1" value="0" title="Quantidade" class=""></div>
+                    </div>
+                    <p class="">#biologico #semgluten #semlactose #semsoja #vegan #vegetariano</p>
+                </div>
+                <div class="">
+                    <div class=""><img class="" src="images/511384.png" title="Cevada Instantânea Bio Cápsulas Compatível Dolce Gusto"></div>
+                    <input type="checkbox" id="product5" name="product5" class="" /> Cevada Instantânea Bio Cápsulas Compatível Dolce Gusto
+                    <p class="">10 Unidades  • 0.40€ por Unid.</p>
+                    <div class="row">
+                        <div class=""><input name="price5" id="price5" class="" value="3.99" title="Preço em €" readonly></div>
+                        <div class=""><input type="number" name="qty5" id="qty5" maxlength="12" min="0" max="99" step="1" value="0" title="Quantidade" class=""></div>
+                    </div>
+                    <p class="">#biologico</p>
+                </div>
+                <div class="">
+                    <div class=""><img class="" src="images/511377.png"></div>
+                    <input type="checkbox" id="product6" name="product6" class="" /> Cevada Instantânea Bio Em Cápsulas Compatível Nespresso
+                    <p class="">10 Capsulas • 0.36€ por Cps.</p>
+                    <div class="row">
+                        <div class=""><input name="price6" id="price6" class="" value="3.55" title="Preço em €" readonly></div>
+                        <div class=""><input type="number" name="qty6" id="qty6" maxlength="12" min="0" max="99" step="1" value="0" title="Quantidade" class=""></div>
+                    </div>
+                    <p class="">#biologico</p>
+                </div>
+            </div>
+        </form>
+        <hr />
+        <p class="">Esta página possui informação retirada de <a href="http://celeiro.pt" target="_blank">http://celeiro.pt</a>. Não pode ser confundida com o site original e serve apenas de exemplo para este teste prático.</p>
+    </div>
+    <script src="teste3.js"></script>
+</body>
+</html>
